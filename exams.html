@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exams | Naitik Sushil Warjurkar</title>
+  <meta name="description" content="Exams Naitik Sushil Warjurkar is preparing for and exploring — MHT-CET, NEET, JEE Main, CUET and board exams." />
+  <meta name="theme-color" content="#03060d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Loading Exams</span>
+    </div>
+  </div>
+
+  <div class="fx-layer" aria-hidden="true">
+    <div class="aurora a1"></div>
+    <div class="aurora a2"></div>
+    <div class="aurora a3"></div>
+    <div class="grid-floor"></div>
+  </div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-head">
+    <div class="shell" style="padding:0;">
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">NW</span>
+          <span class="brand-text">Naitik<em>Portfolio</em></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#studies">Studies</a></li>
+          <li><a href="exams.html" data-page="exams">Exams</a></li>
+          <li><a href="journey.html" data-page="journey">Journey</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-tools">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">🌙</button>
+          <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="shell">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero reveal">
+      <div class="crumbs"><a href="index.html">Home</a> <span>/</span> <span>Exams</span></div>
+      <h1>One syllabus, <span class="shimmer">many exam attempts.</span></h1>
+      <p>I would rather try several exams honestly than gamble everything on one paper. Here is every exam I have written, am preparing for, or am still exploring — with the honest status of each.</p>
+    </section>
+
+    <!-- FILTERS -->
+    <div class="filters reveal" id="filters">
+      <button class="filter active" type="button" data-filter="all">All Exams</button>
+      <button class="filter" type="button" data-filter="entrance">Entrance</button>
+      <button class="filter" type="button" data-filter="board">Board</button>
+      <button class="filter" type="button" data-filter="university">University</button>
+      <button class="filter" type="button" data-filter="practice">Practice</button>
+    </div>
+
+    <!-- EXAM GRID -->
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project card reveal tilt" data-cat="entrance">
+        <span class="num">01</span>
+        <span class="tag">Entrance · Preparing</span>
+        <h3>MHT-CET</h3>
+        <p>Maharashtra state entrance for engineering and pharmacy. PCMB group — Physics, Chemistry, Mathematics and Biology with a heavy focus on speed and accuracy.</p>
+        <span class="link">Main focus right now</span>
+      </article>
+
+      <article class="project card reveal tilt" data-cat="entrance">
+        <span class="num">02</span>
+        <span class="tag">Entrance · Exploring</span>
+        <h3>NEET</h3>
+        <p>National medical entrance. Biology carries the most weight, so my NCERT revision for Botany and Zoology runs alongside the board syllabus.</p>
+        <span class="link">Exploring seriously</span>
+      </article>
+
+      <article class="project card reveal tilt" data-cat="entrance">
+        <span class="num">03</span>
+        <span class="tag">Entrance · Exploring</span>
+        <h3>JEE Main</h3>
+        <p>Engineering entrance with Mathematics at the centre. Numericals and problem-solving speed are the two things I keep working on here.</p>
+        <span class="link">Keeping the door open</span>
+      </article>
+
+      <article class="project card reveal tilt" data-cat="university">
+        <span class="num">04</span>
+        <span class="tag">University · Exploring</span>
+        <h3>CUET</h3>
+        <p>Central university entrance. A different pattern entirely — domain subjects plus general test — so it needs its own practice set.</p>
+        <span class="link">On the list</span>
+      </article>
+
+      <article class="project card reveal tilt" data-cat="board">
+        <span class="num">05</span>
+        <span class="tag">Board · Ongoing</span>
+        <h3>HSC Science — PCMB</h3>
+        <p>Higher secondary at Mahatma Gandhi Jr College. Theory, practicals and internal assessments — the base that every entrance exam builds on.</p>
+        <span class="link">Currently studying</span>
+      </article>
+
+      <article class="project card reveal tilt" data-cat="board">
+        <span class="num">06</span>
+        <span class="tag">Board · Completed</span>
+        <h3>SSC — 75%</h3>
+        <p>Secondary school certificate finished with 75%. The year I learned that consistent daily study beats last-minute panic every single time.</p>
+        <span class="link">Completed</span>
+      </article>
+
+      <article class="project card reveal tilt" data-cat="practice">
+        <span class="num">07</span>
+        <span class="tag">Practice · Mock Tests</span>
+        <h3>Weekly Mock Papers</h3>
+        <p>Full-length papers written under real timing, then corrected honestly. Every wrong answer goes into an error log that I revise before the next test.</p>
+        <span class="link">Every week</span>
+      </article>
+
+      <article class="project card reveal tilt" data-cat="practice">
+        <span class="num">08</span>
+        <span class="tag">Practice · Olympiads</span>
+        <h3>School &amp; Olympiad Papers</h3>
+        <p>Scholarship and olympiad-level papers attempted for extra practice. Not for the certificate — for the harder questions that expose weak concepts.</p>
+        <span class="link">Whenever announced</span>
+      </article>
+
+    </div>
+
+    <!-- PREP PROCESS -->
+    <section class="section">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">How I prepare</span>
+          <h2>My Study Loop</h2>
+        </div>
+        <p>Four steps, repeated for every subject and every exam — no shortcuts, no fancy system.</p>
+      </div>
+
+      <div class="process">
+        <div class="step reveal">
+          <h4>Read the Syllabus</h4>
+          <p>Write down exactly which chapters are in and which are out, so no study hour is wasted on the wrong topic.</p>
+        </div>
+        <div class="step reveal">
+          <h4>Make Short Notes</h4>
+          <p>One page per chapter in my own words — formulas, definitions and the mistakes I already know I make.</p>
+        </div>
+        <div class="step reveal">
+          <h4>Solve Papers</h4>
+          <p>Previous year questions and full mocks under real time limits. Speed only comes from actually writing papers.</p>
+        </div>
+        <div class="step reveal">
+          <h4>Review Mistakes</h4>
+          <p>The error log matters more than the score. Every repeated mistake is a mark I am giving away for free.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="section">
+      <div class="quote card reveal zoom">
+        <p>One exam does not decide a student's future. Trying again, with better preparation, always stays an option.</p>
+        <cite>— Naitik Sushil Warjurkar</cite>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="card reveal" style="padding:34px 30px; text-align:center;">
+        <span class="kicker" style="justify-content:center;">Next step</span>
+        <h2 style="font-size:clamp(1.4rem,3vw,2rem); margin-bottom:12px;">Preparing for the same exam?</h2>
+        <p style="color:var(--muted); font-size:0.92rem; line-height:1.8; max-width:52ch; margin:0 auto 22px;">If you are also juggling PCMB with entrance exams, I would genuinely like to compare notes, resources and study routines.</p>
+        <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
+          <a class="btn btn-primary" href="mailto:naitikwarjurkar08@gmail.com?subject=Exam%20Preparation">Share Study Tips <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="index.html#contact">Use the form</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="footer-grid">
+        <div>
+          <h3>Share My Portfolio</h3>
+          <p>Thank you for visiting. You can contact me directly, view my LinkedIn profile, or share this portfolio with someone who might find it useful.</p>
+        </div>
+        <div class="footer-actions">
+          <a class="f-link" href="mailto:naitikwarjurkar08@gmail.com?subject=Portfolio%20Enquiry">Email Me</a>
+          <a class="f-link" href="https://www.linkedin.com/in/naitik-warjurkar-31a1a7276" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="f-link" href="https://wa.me/?text=Check%20out%20Naitik%20Warjurkar%27s%20portfolio" target="_blank" rel="noopener noreferrer">Share</a>
+          <button class="f-link" type="button" id="copyLink">Copy Link</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Email: naitikwarjurkar08@gmail.com</span>
+        <span>© <span id="year"></span> Naitik Sushil Warjurkar. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

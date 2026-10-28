@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journey | Naitik Sushil Warjurkar</title>
+  <meta name="description" content="The learning journey of Naitik Sushil Warjurkar — education timeline, achievements, goals and growth." />
+  <meta name="theme-color" content="#03060d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">Loading Journey</span>
+    </div>
+  </div>
+
+  <div class="fx-layer" aria-hidden="true">
+    <div class="aurora a1"></div>
+    <div class="aurora a2"></div>
+    <div class="aurora a3"></div>
+    <div class="grid-floor"></div>
+  </div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-head">
+    <div class="shell" style="padding:0;">
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">NW</span>
+          <span class="brand-text">Naitik<em>Portfolio</em></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#studies">Studies</a></li>
+          <li><a href="exams.html" data-page="exams">Exams</a></li>
+          <li><a href="journey.html" data-page="journey">Journey</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-tools">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme" title="Switch theme">🌙</button>
+          <button class="icon-btn menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="shell">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero reveal">
+      <div class="crumbs"><a href="index.html">Home</a> <span>/</span> <span>Journey</span></div>
+      <h1>Still at the <span class="shimmer">beginning.</span></h1>
+      <p>School, science, and a stack of exam admit cards. This is the honest timeline of how I got here — and which exams I am still chasing next.</p>
+    </section>
+
+    <!-- EDUCATION + ACHIEVEMENTS -->
+    <div class="skills-grid">
+      <section class="skills-card card reveal left">
+        <h3 class="card-title">Education Timeline</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="when">SSC · Completed</span>
+            <h4>Secondary School Certificate</h4>
+            <p>Finished with 75%. Built the base — science, mathematics, and the habit of studying consistently.</p>
+          </div>
+          <div class="tl-item">
+            <span class="when">HSC · Ongoing</span>
+            <h4>Higher Secondary — PCMB Science</h4>
+            <p>Physics, Chemistry, Mathematics and Biology. Analytical thinking, problem solving and a lot of practice papers.</p>
+          </div>
+          <div class="tl-item">
+            <span class="when">Present</span>
+            <h4>MGJC — Mahatma Gandhi Jr College</h4>
+            <p>Studying PCMB while preparing for entrance exams on the side — revision between lectures, mock tests on weekends.</p>
+          </div>
+          <div class="tl-item">
+            <span class="when">Next</span>
+            <h4>Higher Education & Entrance Exams</h4>
+            <p>Working towards a college seat through MHT-CET and other entrance papers — and staying open to whatever path the results open up.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-card card reveal right">
+        <h3 class="card-title">Achievements</h3>
+        <div class="badge-grid">
+          <div class="badge">
+            <span class="ico">🎓</span>
+            <strong>SSC 75%</strong>
+            <span>Strong academic base</span>
+          </div>
+          <div class="badge">
+            <span class="ico">🎯</span>
+            <strong>4+ Exams</strong>
+            <span>Tried & exploring</span>
+          </div>
+          <div class="badge">
+            <span class="ico">🧪</span>
+            <strong>PCMB Science</strong>
+            <span>Physics · Chem · Maths · Bio</span>
+          </div>
+          <div class="badge">
+            <span class="ico">📚</span>
+            <strong>Self Study</strong>
+            <span>Daily revision habit</span>
+          </div>
+          <div class="badge">
+            <span class="ico">📝</span>
+            <strong>Mock Tests</strong>
+            <span>Weekly practice papers</span>
+          </div>
+          <div class="badge">
+            <span class="ico">⏱️</span>
+            <strong>Consistency</strong>
+            <span>Small steps, every week</span>
+          </div>
+        </div>
+
+        <div class="sub-block">
+          <span class="mini-label">Beyond Academics</span>
+          <div class="pills">
+            <span>Sketching</span>
+            <span>Music</span>
+            <span>Reading</span>
+            <span>Sports</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- GOALS -->
+    <section class="section">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">Direction</span>
+          <h2>What I Am Working Towards</h2>
+        </div>
+        <p>Clear goals keep study hours from turning into endless scrolling. These are mine for the next phase.</p>
+      </div>
+
+      <div class="goal-list">
+        <div class="goal reveal">
+          <span class="dot"></span>
+          <div>
+            <h4>Score well in MHT-CET</h4>
+            <p>My main target this year. Physics, Chemistry, Mathematics and Biology — with speed practice so the paper never feels too long.</p>
+          </div>
+        </div>
+        <div class="goal reveal">
+          <span class="dot"></span>
+          <div>
+            <h4>Keep board marks strong</h4>
+            <p>Entrance exams are built on the board syllabus. Strong HSC marks and a good entrance score together open the most doors.</p>
+          </div>
+        </div>
+        <div class="goal reveal">
+          <span class="dot"></span>
+          <div>
+            <h4>Attempt more than one exam</h4>
+            <p>NEET, JEE Main and CUET as well. Different patterns, different strengths tested — and more than one chance to get it right.</p>
+          </div>
+        </div>
+        <div class="goal reveal">
+          <span class="dot"></span>
+          <div>
+            <h4>Fix the weak chapters first</h4>
+            <p>An honest error log instead of comfortable revision. The chapters I avoid are exactly the ones costing me marks.</p>
+          </div>
+        </div>
+        <div class="goal reveal">
+          <span class="dot"></span>
+          <div>
+            <h4>Get into a good college</h4>
+            <p>A course that fits my strengths in science — and a campus where studying hard is the normal thing to do.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="section">
+      <div class="quote card reveal zoom">
+        <p>I do not need to be the best in the room. I just need to be better than I was last month.</p>
+        <cite>— Naitik Sushil Warjurkar</cite>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="card reveal" style="padding:34px 30px; text-align:center;">
+        <span class="kicker" style="justify-content:center;">Say hello</span>
+        <h2 style="font-size:clamp(1.4rem,3vw,2rem); margin-bottom:12px;">Preparing for the same exams?</h2>
+        <p style="color:var(--muted); font-size:0.92rem; line-height:1.8; max-width:52ch; margin:0 auto 22px;">If you have study resources, exam tips, or just want to compare preparation notes — my inbox is open.</p>
+        <div class="hero-actions" style="justify-content:center; margin-bottom:0;">
+          <a class="btn btn-primary" href="mailto:naitikwarjurkar08@gmail.com?subject=Hello%20Naitik">Email Me <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="exams.html">See My Exams</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="footer-grid">
+        <div>
+          <h3>Share My Portfolio</h3>
+          <p>Thank you for visiting. You can contact me directly, view my LinkedIn profile, or share this portfolio with someone who might find it useful.</p>
+        </div>
+        <div class="footer-actions">
+          <a class="f-link" href="mailto:naitikwarjurkar08@gmail.com?subject=Portfolio%20Enquiry">Email Me</a>
+          <a class="f-link" href="https://www.linkedin.com/in/naitik-warjurkar-31a1a7276" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="f-link" href="https://wa.me/?text=Check%20out%20Naitik%20Warjurkar%27s%20portfolio" target="_blank" rel="noopener noreferrer">Share</a>
+          <button class="f-link" type="button" id="copyLink">Copy Link</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Email: naitikwarjurkar08@gmail.com</span>
+        <span>© <span id="year"></span> Naitik Sushil Warjurkar. All rights reserved.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
